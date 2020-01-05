@@ -27,7 +27,7 @@ public class Test {
       //  appleList.sort((o1,o2)-> {return o1.getWeight().compareTo(o2.getWeight());});
 
 //        3.lambda
-        appleList.sort(Comparator.comparing(Apple::getWeight));
+        appleList.sort(Comparator.comparing(Apple::getWeight).reversed());
 
         appleList.forEach(System.out::println);
 
