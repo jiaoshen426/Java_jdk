@@ -1,4 +1,4 @@
-package com.jiaoshen.lambda.apple;
+package com.jiaoshen.pojo;
 
 /**
  * @author jiaoshen

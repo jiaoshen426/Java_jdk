@@ -6,6 +6,11 @@ import java.util.stream.Collectors;
 
 
 /**
+ * Stream
+
+ *
+ *
+ *
  * @author jiaoshen
  * @date 2019/6/8-13:21
  */
@@ -21,19 +26,23 @@ public class MySream {
             new Dish("prawns", false, 300, Dish.Type.FISH),
             new Dish("salmon", false, 450, Dish.Type.FISH)
     );
-
-
     /**
      * stream示例一
+     * 常用函数(分中间函数和结果函数 结果函数返回结果不是流)
+     * filter 筛选
+     * map  T->R  函数转换
+     * limit  截断
+     * distinct 去重
+     * 流只能被消费一次
+     * 流是内部迭代（可自己优化），集合是外部迭代，必须按顺序来
+     *
      */
-
     public static void example() {
 
 
         List<String> highCaloricDishNames = menu.stream().filter(d ->
                 d.getCalories() > 300
         ).map(Dish::getName).limit(3).collect(Collectors.toList());
-
         System.out.println(highCaloricDishNames);
 
     }
@@ -50,7 +59,28 @@ public class MySream {
 
     }
 
+    /**
+     * reduce 归约 汇总的意思 是按顺序来执行的
+     */
+    public static void reduceExample() {
+        List<Integer> numsList=Arrays.asList(2,1,3);
+        Integer result = numsList.stream().reduce(0,(a,b)->a*2+b);
+        System.out.println("result :"+result);
+
+
+
+
+
+        //List<String> highCaloricDishNames = menu.stream().map(Dish::getName).map(w->w.split(""));
+
+        System.out.println();
+
+    }
+
     public static void main(String[] args) {
-        example();
+
+        reduceExample();
+
+
     }
 }
