@@ -15,7 +15,7 @@ import java.util.stream.Collectors;
  * @date 2019/6/8-13:21
  */
 public class MySream {
-    static  List<Dish> menu = Arrays.asList(
+    public static  List<Dish> menu = Arrays.asList(
             new Dish("pork", false, 800, Dish.Type.MEAT),
             new Dish("beef", false, 700, Dish.Type.MEAT),
             new Dish("chicken", false, 400, Dish.Type.MEAT),
