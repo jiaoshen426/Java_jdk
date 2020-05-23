@@ -1,7 +1,6 @@
 package com.jiaoshen.other;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
@@ -12,8 +11,8 @@ import java.util.List;
  */
 public class Test2 {
     public static void main(String[] args) {
-        List<Integer> numList = Arrays.asList(1,2,3);
-        System.out.println(subSet(numList));
+
+
     }
     static List<List<Integer>> subSet(List<Integer> list){
         List result = new ArrayList();
