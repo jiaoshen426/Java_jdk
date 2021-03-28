@@ -20,7 +20,6 @@ public class CollectDemo {
         //1.连接字符串
         String nameStr = dishes.stream().map(Dish::getName).collect(Collectors.joining(","));
         //System.out.println(nameStr);
-
         //2.reducing 规约（函数基本框架：参数1.初始值，2.转换函数，3.累积函数）
         int totalCalories = dishes.stream().collect(reducing(
                 0,Dish::getCalories,Integer::sum));

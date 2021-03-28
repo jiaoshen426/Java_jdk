@@ -16,6 +16,7 @@ public class Test {
         appleList.add(new Apple("RED", 15));
         appleList.add(new Apple("RED", 19));
         appleList.add(new Apple("RED", 13));
+
         appleList.add(new Apple("RED", 12));
 
         // 1.old method
