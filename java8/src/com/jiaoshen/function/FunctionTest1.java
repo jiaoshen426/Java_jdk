@@ -1,6 +1,6 @@
 package com.jiaoshen.function;
 
-import com.jiaoshen.common.AppleUtil;
+import com.jiaoshen.function.util.AppleUtil;
 import com.jiaoshen.pojo.Apple;
 
 import java.util.Comparator;

@@ -1,4 +1,4 @@
-package com.jiaoshen.common;
+package com.jiaoshen.function.util;
 
 import com.jiaoshen.pojo.Apple;
 
